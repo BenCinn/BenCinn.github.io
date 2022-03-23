@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "marked": "^4.0.12",
+    "sanitize-html": "^2.7.0"
+  }
+}
