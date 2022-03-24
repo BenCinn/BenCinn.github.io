@@ -8,7 +8,7 @@ var compile = function (markdown, blogname) {
     path.extname(blogname) !== ".html"
       ? path.parse(blogname).name + ".html"
       : blogname,
-    sanitize(marked.parse("[markdown](https://www.google.com)")),
+    sanitize(marked.parse(blogname)),
     (err) => {
       if (err) console.log("ERROR:" + err);
       else console.log("Write successfully");
