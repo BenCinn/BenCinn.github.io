@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "marked": "^4.0.12",
-    "sanitize-html": "^2.7.0"
-  },
-  "scripts": {
-    "deploy": "npm i gh-pages -g && node server.js && gh-pages -d dist"
-  }
-}
