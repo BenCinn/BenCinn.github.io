@@ -5,14 +5,6 @@ title: Test
 
 This is the test page for jekyll layouts.
 
----
-
-layout: default
-title: Test
-
----
-
-This is the test page for jekyll layouts.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices nibh vitae pellentesque gravida. Donec scelerisque ipsum turpis, in facilisis risus scelerisque laoreet. Donec ut orci feugiat, sagittis mauris at, pharetra nisi. Mauris vitae nibh sed velit placerat consectetur. Vivamus lacinia eleifend felis, vel porttitor nunc tincidunt nec. Pellentesque sodales, turpis eu suscipit aliquet, arcu nisi mollis libero, sed imperdiet odio metus at dui. Sed vel est venenatis, dictum ante eu, dignissim ex. Aenean lacinia diam nec egestas porta. Pellentesque tortor purus, semper consequat vulputate ut, dapibus ac orci. Cras risus erat, vulputate vitae tristique vel, efficitur quis metus. Sed id tristique neque, quis pellentesque metus. Aliquam accumsan hendrerit purus in faucibus. Cras nec tortor quis eros dictum posuere sit amet nec purus. Sed vitae ex sollicitudin, aliquam ex eu, laoreet nisi.
 
