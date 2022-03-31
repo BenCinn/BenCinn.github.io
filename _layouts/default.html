@@ -3,30 +3,31 @@
        <head>
               <link rel="stylesheet" href="../index.css" />
               <style>
-                     .link-underline {
-                            border-bottom-width: 0;
-                            background-image: linear-gradient(
-                                          transparent,
-                                          transparent
-                                   ),
-                                   linear-gradient(#fff, #fff);
-                            background-size: 0 3px;
-                            background-position: 0 100%;
-                            background-repeat: no-repeat;
-                            transition: background-size 0.5s ease-in-out;
+                     .linkanim {
+                            position: relative;
+                            color: #000;
+                            text-decoration: none;
                      }
 
-                     .link-underline-black {
-                            background-image: linear-gradient(
-                                          transparent,
-                                          transparent
-                                   ),
-                                   linear-gradient(#11181d, #11181d);
+                     .linkanim:hover {
+                            color: #000;
                      }
 
-                     .link-underline:hover {
-                            background-size: 100% 3px;
-                            background-position: 0 100%;
+                     .linkanim::before {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 100%;
+                            height: 2px;
+                            bottom: 0;
+                            left: 0;
+                            background-color: #000;
+                            transform: scaleX(0);
+                            transition: transform 0.3s ease;
+                     }
+
+                     .linkanim:hover::before {
+                            transform: scaleX(1);
                      }
               </style>
        </head>
@@ -34,10 +35,13 @@
        <body
               class="bg-gray-100 dark:bg-neutral-800 font-sans leading-normal tracking-normal transition duration-300"
        >
-              <nav id="header" class="fixed top-0 z-10 w-full">
+              <nav
+                     id="header"
+                     class="fixed top-0 z-10 w-full backdrop-filter backdrop-blur-[10px] bg-opacity-30 bg-white shadow"
+              >
                      <div
                             id="progress"
-                            class="top-0 z-20 h-1"
+                            class="top-0 z-20 h-1 rounded-br-full"
                             style="
                                    background: linear-gradient(
                                           to right,
@@ -87,7 +91,7 @@
                                                                       class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1"
                                                                >
                                                                       <div
-                                                                             class="toggle-dot w-4 h-4 bg-white rounded-full shadow-sm"
+                                                                             class="toggle-dot w-4 h-4 bg-white rounded-full shadow-sm transition duration-300"
                                                                       ></div></div
                                                         ></label>
                                                  </div>
@@ -156,7 +160,7 @@
                             <div class="justify-end">
                                    <a href="/"
                                           ><button
-                                                 class="rounded-full border border-neutral-800 text-neutral-800 dark:border-neutral-500 dark:text-neutral-500 bg-transparent py-2 px-4 text-xs font-bold text-neutral-80 hover:border-blue-500 hover:text-blue-500 dark:hover:text-neutral-300 dark:hover:border-neutral-300 transition duration-300"
+                                                 class="rounded-full border border-neutral-800 text-neutral-800 dark:border-neutral-500 dark:text-neutral-500 bg-transparent py-2 px-4 text-xs font-bold text-neutral-80 hover:border-blue-500 hover:text-blue-500 dark:hover:text-neutral-300 dark:hover:border-neutral-300 transition duration-300 ease-linear"
                                           >
                                                  Read More
                                           </button></a
@@ -183,12 +187,15 @@
                                                         About
                                                  </h3>
                                                  <p
-                                                        class="py-4 text-sm text-gray-600 dark:text-neutral-900 transition duration-300"
+                                                        class="py-4 text-sm text-neutral-900 dark:text-neutral-200 transition duration-300"
                                                  >
                                                         I'm student that starts
                                                         coding since 2018 for
                                                         fun, And I still doing
-                                                        it for <b>fun</b>!
+                                                        it for
+                                                        <b class="text-blue-500"
+                                                               >fun</b
+                                                        >!
                                                  </p>
                                           </div>
                                    </div>
@@ -198,14 +205,14 @@
                                                  <h3
                                                         class="font-bold text-neutral-900"
                                                  >
-                                                        Social
+                                                        Contact
                                                  </h3>
                                                  <ul
                                                         class="list-reset items-center pt-3 text-sm"
                                                  >
                                                         <li>
                                                                <a
-                                                                      class="link link-underline link-underline-black hover:text-underline inline-block py-1 text-gray-600 dark:text-neutral-300 no-underline hover:text-gray-900 dark:hover:text-neutral-400 transition duration-300"
+                                                                      class="linkanim transition duration-300 inline-block py-1 text-gray-600 dark:text-neutral-300 hover:text-gray-900 hover:dark:text-neutral-400"
                                                                       href="https://github.com/BenCinn"
                                                                       >github:
                                                                       <b
@@ -215,7 +222,7 @@
                                                         </li>
                                                         <li>
                                                                <a
-                                                                      class="link link-underline link-underline-black hover:text-underline inline-block py-1 text-gray-600 dark:text-neutral-300 no-underline hover:text-gray-900 dark:hover:text-neutral-400 transition duration-300"
+                                                                      class="linkanim transition duration-300 inline-block py-1 text-gray-600 dark:text-neutral-300 no-underline hover:text-gray-900 hover:dark:text-neutral-400"
                                                                       href="https://bencinn.github.io/"
                                                                       >Website:
                                                                       <b
@@ -225,7 +232,7 @@
                                                         </li>
                                                         <li>
                                                                <a
-                                                                      class="link link-underline link-underline-black hover:text-underline inline-block py-1 text-gray-600 dark:text-neutral-300 no-underline hover:text-gray-900 dark:hover:text-neutral-400 transition duration-300"
+                                                                      class="linkanim transition duration-300 inline-block py-1 text-gray-600 dark:text-neutral-300 no-underline hover:text-gray-900 hover:dark:text-neutral-400"
                                                                       href="mailto:pp.rongpan@gmail.com"
                                                                       >Email:
                                                                       <b
@@ -305,21 +312,6 @@
                                    '--scroll',
                                    scroll + '%'
                             );
-
-                            /*Apply classes for slide in bar*/
-                            scrollpos = window.scrollY;
-
-                            if (scrollpos > 10) {
-                                   header.classList.add('bg-white');
-                                   header.classList.add('shadow');
-                                   navcontent.classList.remove('bg-gray-100');
-                                   navcontent.classList.add('bg-white');
-                            } else {
-                                   header.classList.remove('bg-white');
-                                   header.classList.remove('shadow');
-                                   navcontent.classList.remove('bg-white');
-                                   navcontent.classList.add('bg-gray-100');
-                            }
                      });
               </script>
        </body>
