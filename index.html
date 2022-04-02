@@ -4,45 +4,174 @@
               <meta charset="utf-8" />
               <title>BenCinn | Chitsannupong Rongpan</title>
               <link rel="stylesheet" href="./index.css" />
-       </head>
-       <body class="pl-2">
-              <h1 class="text-left text-2xl font-normal">
-                     Hi,<br />I'm <a class="font-semibold">Chitsanupong</a>.
-                     from
-                     <a
-                            class="font-bold transition-all duration-[300ms] hover:text-slate-300"
-                            href="https://github.com/BenCinn"
-                            >Github</a
+              <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+              <nav
+                     id="header"
+                     class="sticky top-0 z-10 w-full backdrop-filter backdrop-blur-[10px] bg-opacity-30 bg-white shadow"
+              >
+                     <div
+                            class="mx-auto mt-0 flex w-full flex-wrap items-center justify-between py-3 md:max-w-4xl"
                      >
-              </h1>
-              <h1 class="text-left text-2xl font-normal pt-8 pb-2">
-                     Contact Info:
-              </h1>
-              <ul class="list-disc list-inside">
-                     <li class="pl-[12px]">
-                            Email:
-                            <a
-                                   class="pl-[2px] underline decoration-green-400 decoration-[3px] transition-all duration-[300ms] hover:text-green-400"
-                                   href="mailto:pp.rongpan@gmail.com"
-                                   >pp.rongpan@gmail.com</a
+                            <div class="pl-4">
+                                   <a
+                                          class="text-base text-xl font-extrabold text-gray-900 dark:text-neutral-200 no-underline hover:no-underline transition duration-300"
+                                          href="/"
+                                   >
+                                          Chitsanupong
+                                   </a>
+                            </div>
+
+                            <div
+                                   class="z-20 mt-2 hidden w-full flex-grow bg-gray-100 md:bg-transparent lg:mt-0 lg:block lg:flex lg:w-auto lg:items-center"
+                                   id="nav-content"
                             >
-                     </li>
-                     <li class="pl-[12px]">
-                            Github:
-                            <a
-                                   class="pl-[2px] underline decoration-slate-500 decoration-[3px] transition-all duration-[300ms] hover:text-slate-500"
-                                   href="https://github.com/BenCinn"
-                                   >@BenCinn</a
+                                   <ul
+                                          class="list-reset flex-1 items-center justify-end lg:flex"
+                                   >
+                                          <li class="mr-3">
+                                                 <div
+                                                        class="flex justify-end items-center"
+                                                 >
+                                                        <span
+                                                               class="text-sm dark:text-neutral-700 text-neutral-400 transition duration-300"
+                                                               >Light</span
+                                                        >
+                                                 </div>
+                                                 <div>
+                                                        <input
+                                                               type="checkbox"
+                                                               name=""
+                                                               id="toggle"
+                                                               class="hidden"
+                                                        />
+                                                        <label for="toggle">
+                                                               <div
+                                                                      class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1"
+                                                               >
+                                                                      <div
+                                                                             class="toggle-dot w-4 h-4 bg-white rounded-full shadow-sm transition duration-300"
+                                                                      ></div></div
+                                                        ></label>
+                                                 </div>
+                                                 <div
+                                                        class="flex justify-end items-center"
+                                                 >
+                                                        <span
+                                                               class="text-sm dark:text-neutral-400 text-neutral-700 transition duration-300"
+                                                               >Dark</span
+                                                        >
+                                                 </div>
+                                          </li>
+                                          <li class="mr-3">
+                                                 <a
+                                                        class="inline-block py-2 px-4 font-bold text-gray-900 dark:text-neutral-200 no-underline transition duration-300"
+                                                        href="/"
+                                                        >Home</a
+                                                 >
+                                          </li>
+                                   </ul>
+                            </div>
+                     </div>
+              </nav>
+       </head>
+       <body
+              class="bg-gray-100 dark:bg-neutral-800 font-sans leading-normal tracking-normal transition duration-300 flex flex-col min-h-screen relative"
+       >
+              <div class="pb-12 pt-12">
+                     <div class="sm:text-center lg:text-left pl-12">
+                            <h1
+                                   class="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl transition duration-300"
                             >
-                     </li>
-              </ul>
-              <p class="text-center inset-x-0 bottom-0 fixed pb-2">
-                     Made by
+                                   <span class="block xl:inline">Hi, I'm</span>
+                                   <span class="block text-blue-400 xl:inline"
+                                          >Chitsanupong</span
+                                   ><br />I'm
+                                   <span
+                                          class="block text-blue-400 xl:inline experience"
+                                   ></span>
+                                   Developer.
+                            </h1>
+                            <div
+                                   class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
+                            >
+                                   <div class="rounded-md shadow">
+                                          <a
+                                                 href="#"
+                                                 class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-400 hover:bg-blue-300 md:py-4 md:text-lg md:px-10 transition duration-300 ease-in-out"
+                                          >
+                                                 Visit my Github profile
+                                          </a>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+
+              <p
+                     class="text-center inset-x-0 bottom-0 pb-2 text-black dark:text-white transition-all duration-[300ms] absolute"
+              >
+                     Powered by
                      <a
-                            class="underline decoration-yellow-400 decoration-[3px] transition-all duration-[300ms] hover:text-yellow-400"
-                            href="http://jekyllrb.com/"
-                            >Jekyll</a
+                            class="underline decoration-yellow-400 decoration-[3px] transition-all duration-[300ms] hover:text-yellow-400 stacks"
+                     ></a
                      >.
               </p>
+              <script>
+                     /* Text Animation */
+                     var experience = new Typed('.experience', {
+                            strings: ['Front-End', 'Back-End', 'Web-App'],
+                            typeSpeed: 100,
+                            backSpeed: 50,
+                            smartBackspace: true,
+                            loop: true,
+                     });
+                     var stacks = new Typed('.stacks', {
+                            strings: ['Jekyll', 'Tailwind CSS', 'Github Pages'],
+                            typeSpeed: 100,
+                            backSpeed: 50,
+                            smartBackspace: true,
+                            loop: true,
+                     });
+
+                     /* Dark Mode */
+                     const themeselect = function (theme) {
+                            if (theme == 'dark') {
+                                   document.documentElement.classList.add(
+                                          'dark'
+                                   );
+                                   html.classList.add('dark');
+                                   localStorage.setItem('theme', 'dark');
+                            } else {
+                                   document.documentElement.classList.remove(
+                                          'dark'
+                                   );
+                                   html.classList.remove('dark');
+                                   localStorage.setItem('theme', 'light');
+                            }
+                     };
+
+                     const checkbox = document.querySelector('#toggle');
+                     const html = document.querySelector('html');
+
+                     const toggle = function () {
+                            checkbox.checked
+                                   ? themeselect('dark')
+                                   : themeselect('light');
+                     };
+
+                     if (
+                            localStorage.theme === 'dark' ||
+                            (!('theme' in localStorage) &&
+                                   window.matchMedia(
+                                          '(prefers-color-scheme: dark)'
+                                   ).matches)
+                     ) {
+                            document.documentElement.classList.add('dark');
+                            checkbox.checked = true;
+                     } else {
+                            document.documentElement.classList.remove('dark');
+                            checkbox.checked = false;
+                     }
+                     checkbox.addEventListener('click', toggle);
+              </script>
        </body>
 </html>
