@@ -4,54 +4,6 @@
               <meta charset="utf-8" />
               <link rel="stylesheet" href="./index.css" />
               <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-              <style>
-                     /* article section */
-                     /* From: https://github.com/sharadcodes/jekyll-theme-serial-programmer/blob/main/assets/css/blog.css */
-
-                     .articles {
-                            display: grid;
-                            row-gap: 2rem;
-                            margin: 4rem 0 3rem 0;
-                     }
-                     .articles .article {
-                            padding: 2rem;
-                            background: var(--gray-3);
-                            border-radius: 15px;
-                            transition: all 0.2s ease-in-out;
-                     }
-                     .articles .article .article-title,
-                     .articles .article .article-title a {
-                            color: var(--white-2);
-                            font-weight: 100;
-                            font-style: italic;
-                            font-size: 1.4rem;
-                            line-height: 130%;
-                     }
-                     .articles .article:hover {
-                            transform: scale(1.05);
-                     }
-                     .articles .article .date {
-                            display: block;
-                            font-size: 0.8rem;
-                     }
-                     .articles .article .categories {
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            justify-content: flex-start;
-                     }
-                     .articles .article .categories .category {
-                            margin: 0 0.5rem 0.3rem 0;
-                            display: block;
-                            color: var(--gray-4);
-                            background: var(--white-2);
-                            border-radius: 15px;
-                            font-size: 0.7rem;
-                            padding: 0 0.8rem;
-                            line-height: 1.3rem;
-                            cursor: pointer;
-                     }
-              </style>
               <nav
                      id="header"
                      class="sticky top-0 z-10 w-full backdrop-filter backdrop-blur-[10px] bg-opacity-30 bg-white shadow"
@@ -151,9 +103,12 @@
                                    </div>
                             </div>
                      </div>
+                     <!-- From: https://github.com/sharadcodes/jekyll-theme-serial-programmer/blob/main/assets/css/blog.css -->
                      {% for post in site.posts %}
-                     <article class="article">
-                            <h2 class="article-title">
+                     <article
+                            class="grid gap-8 m-16 transition ease-in-out delay-150 bg-blue-500 md:hover:-translate-y-1 md:hover:scale-110 duration-300"
+                     >
+                            <h2 class="font-thin">
                                    <a href="{{site.baseurl}}{{post.url}}">
                                           {{post.title}}
                                    </a>
