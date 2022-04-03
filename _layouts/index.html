@@ -2,75 +2,108 @@
 <html>
        <head>
               <meta charset="utf-8" />
-              <link rel="stylesheet" href="./style.css" />
+              <link rel="stylesheet" href="../style.css" />
               <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
               <nav
-                     id="header"
-                     class="sticky top-0 z-10 w-full backdrop-filter backdrop-blur-[10px] bg-opacity-30 bg-white shadow"
+                     class="nav flex flex-wrap items-center justify-between px-4 backdrop-filter backdrop-blur-[10px] bg-opacity-30"
               >
                      <div
-                            class="mx-auto mt-0 flex w-full flex-wrap items-center justify-between py-3 md:max-w-4xl"
+                            class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest"
                      >
-                            <div class="pl-4">
-                                   <a
-                                          class="text-base text-xl font-extrabold text-gray-900 dark:text-neutral-200 no-underline hover:no-underline transition duration-300"
-                                          href="/"
-                                   >
-                                          Chitsanupong
-                                   </a>
-                            </div>
-
-                            <div
-                                   class="z-20 mt-2 hidden w-full flex-grow bg-gray-100 md:bg-transparent lg:mt-0 lg:block lg:flex lg:w-auto lg:items-center"
-                                   id="nav-content"
+                            <svg
+                                   class="fill-current h-8 mr-2 w-8 transition duration-300"
+                                   xmlns="http://www.w3.org/2000/svg"
+                                   width="97"
+                                   height="97"
+                                   viewBox="0 0 97 97"
+                                   fill="none"
                             >
-                                   <ul
-                                          class="list-reset flex-1 items-center justify-end lg:flex"
-                                   >
-                                          <li class="mr-3">
-                                                 <div
-                                                        class="flex justify-end items-center"
-                                                 >
-                                                        <span
-                                                               class="text-sm dark:text-neutral-700 text-neutral-400 transition duration-300"
-                                                               >Light</span
-                                                        >
-                                                 </div>
-                                                 <div>
-                                                        <input
-                                                               type="checkbox"
-                                                               name=""
-                                                               id="toggle"
-                                                               class="hidden"
-                                                        />
-                                                        <label for="toggle">
-                                                               <div
-                                                                      class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1"
-                                                               >
-                                                                      <div
-                                                                             class="toggle-dot w-4 h-4 bg-white rounded-full shadow-sm transition duration-300"
-                                                                      ></div></div
-                                                        ></label>
-                                                 </div>
-                                                 <div
-                                                        class="flex justify-end items-center"
-                                                 >
-                                                        <span
-                                                               class="text-sm dark:text-neutral-400 text-neutral-700 transition duration-300"
-                                                               >Dark</span
-                                                        >
-                                                 </div>
-                                          </li>
-                                          <li class="mr-3">
-                                                 <a
-                                                        class="inline-block py-2 px-4 font-bold text-gray-900 dark:text-neutral-200 no-underline transition duration-300"
-                                                        href="/"
-                                                        >Home</a
-                                                 >
-                                          </li>
-                                   </ul>
-                            </div>
+                                   <circle
+                                          cx="48.5"
+                                          cy="48.5"
+                                          r="48.5"
+                                          fill="#0085FF"
+                                          fill-opacity="1"
+                                   />
+                            </svg>
+
+                            <span
+                                   class="font-semibold text-xl tracking-tight dark:text-white transition duration-300"
+                                   >BenCinn | Chitsanupong Rongpan</span
+                            >
                      </div>
+
+                     <input
+                            class="menu-btn hidden"
+                            type="checkbox"
+                            id="menu-btn"
+                     />
+                     <label
+                            class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
+                            for="menu-btn"
+                     >
+                            <span
+                                   class="navicon bg-grey-darkest flex items-center relative"
+                            ></span>
+                     </label>
+
+                     <ul
+                            class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto"
+                     >
+                            <li class="mr-3">
+                                   <div class="flex justify-end items-center">
+                                          <span
+                                                 class="text-sm dark:text-neutral-700 text-neutral-400 transition duration-300"
+                                                 >Light</span
+                                          >
+                                   </div>
+                                   <div>
+                                          <input
+                                                 type="checkbox"
+                                                 name=""
+                                                 id="toggle"
+                                                 class="hidden"
+                                          />
+                                          <label for="toggle">
+                                                 <div
+                                                        class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1"
+                                                 >
+                                                        <div
+                                                               class="toggle-dot w-4 h-4 bg-white rounded-full shadow-sm transition duration-300"
+                                                        ></div></div
+                                          ></label>
+                                   </div>
+                                   <div class="flex justify-end items-center">
+                                          <span
+                                                 class="text-sm dark:text-neutral-400 text-neutral-700 transition duration-300"
+                                                 >Dark</span
+                                          >
+                                   </div>
+                            </li>
+                            <li class="border-t md:border-none">
+                                   <a
+                                          href="/"
+                                          class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold"
+                                          >Home</a
+                                   >
+                            </li>
+
+                            <li class="border-t md:border-none">
+                                   <a
+                                          href="/about/"
+                                          class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker"
+                                          >About</a
+                                   >
+                            </li>
+
+                            <li class="border-t md:border-none">
+                                   <a
+                                          href="/blog/"
+                                          class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker"
+                                          >Blog</a
+                                   >
+                            </li>
+                     </ul>
               </nav>
        </head>
        <body
@@ -96,7 +129,7 @@
                                    <div class="rounded-md shadow">
                                           <a
                                                  href="#"
-                                                 class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-400 hover:bg-blue-300 md:py-4 md:text-lg md:px-10 transition duration-300 ease-in-out"
+                                                 class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-400 hover:bg-blue-300 md:py-4 md:text-lg md:px-10 transition duration-300 ease-out md:hover:-translate-y-1 md:hover:scale-105"
                                           >
                                                  Visit my Github profile
                                           </a>
@@ -110,21 +143,21 @@
                      </h1>
                      <!-- From: https://github.com/sharadcodes/jekyll-theme-serial-programmer/blob/main/assets/css/blog.css -->
                      {% for post in site.posts %}
-                     <article
-                            class="grid max-w-md mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl items-center gap-6 dark:bg-neutral-800 dark:highlight-white/5 m-16 transition ease-out md:hover:-translate-y-1 md:hover:scale-105 duration-500"
-                     >
-                            <h2
-                                   class="mx-8 mt-8 text-slate-900 font-medium text-sm sm:text-base truncate dark:text-slate-200"
+                     <a href="{{site.baseurl}}{{post.url}}"
+                            ><article
+                                   class="grid max-w-md mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl items-center gap-6 dark:bg-neutral-800 dark:highlight-white/5 m-16 transition ease-out md:hover:-translate-y-1 md:hover:scale-105 duration-500"
                             >
-                                   <a href="{{site.baseurl}}{{post.url}}">
+                                   <h2
+                                          class="mx-8 mt-8 text-slate-900 font-medium text-sm sm:text-base truncate dark:text-slate-200"
+                                   >
                                           {{post.title}}
-                                   </a>
-                            </h2>
-                            <small
-                                   class="mx-8 mb-8 text-slate-500 font-medium text-sm sm:text-base leading-tight truncate dark:text-slate-400"
-                                   >{{post.date | date_to_string}}</small
-                            >
-                     </article>
+                                   </h2>
+                                   <small
+                                          class="mx-8 mb-8 text-slate-500 font-medium text-sm sm:text-base leading-tight truncate dark:text-slate-400"
+                                          >{{post.date | date_to_string}}</small
+                                   >
+                            </article></a
+                     >
                      {%endfor%}
               </div>
 
@@ -132,22 +165,24 @@
                      class="text-center inset-x-0 bottom-0 pb-2 text-black dark:text-white transition-all duration-[300ms] absolute"
               >
                      Powered by
-                     <a
-                            class="underline decoration-yellow-400 decoration-[3px] transition-all duration-[300ms] hover:text-yellow-400 stacks"
-                     ></a
-                     >.
+                     <a class="stacks"></a>.
               </p>
               <script>
                      /* Text Animation */
                      var experience = new Typed('.experience', {
                             strings: ['Front-End', 'Back-End', 'Web-App'],
                             typeSpeed: 100,
+                            showCursor: false,
                             backSpeed: 50,
                             smartBackspace: true,
                             loop: true,
                      });
                      var stacks = new Typed('.stacks', {
-                            strings: ['Jekyll', 'Tailwind CSS', 'Github Pages'],
+                            strings: [
+                                   '<a class="underline decoration-yellow-400 decoration-[3px] transition-all duration-[300ms]">Jekyll</a>',
+                                   '<a class="underline decoration-blue-400 decoration-[3px] transition-all duration-[300ms]">Tailwind CSS</a>',
+                                   '<a class="underline decoration-blue-800 decoration-[3px] transition-all duration-[300ms]">Github Pages</a>',
+                            ],
                             typeSpeed: 100,
                             backSpeed: 50,
                             smartBackspace: true,
