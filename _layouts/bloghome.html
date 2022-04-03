@@ -110,62 +110,6 @@
               class="bg-gray-100 dark:bg-neutral-800 font-sans leading-normal tracking-normal transition duration-300 flex flex-col min-h-screen relative"
        >
               <div class="pb-12 pt-12">
-                     <div class="sm:text-center lg:text-left pl-12">
-                            <h1
-                                   class="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl transition duration-300"
-                            >
-                                   <span class="block xl:inline">Hi, I'm</span>
-                                   <span class="block text-blue-400 xl:inline"
-                                          >Chitsanupong,</span
-                                   ><br />
-                                   <div>
-                                          I'm
-                                          <span
-                                                 class="inline text-blue-400 experience w-auto"
-                                          ></span
-                                          ><br />
-                                          Developer.
-                                   </div>
-                            </h1>
-                            <div
-                                   class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
-                            >
-                                   <div class="rounded-md shadow">
-                                          <a
-                                                 href="#"
-                                                 class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-400 hover:bg-blue-300 md:py-4 md:text-lg md:px-10 transition duration-300 ease-out md:hover:-translate-y-1 md:hover:scale-105"
-                                          >
-                                                 Visit my Github profile
-                                          </a>
-                                   </div>
-                            </div>
-                     </div>
-                     <div>
-                            <h1
-                                   class="text-center text-blue-400 tracking-tight font-extrabold dark:text-gray-100 sm:text-5xl md:text-6xl transition duration-300 mt-10"
-                            >
-                                   Latest posts
-                            </h1>
-                            <!-- Modified from: https://github.com/sharadcodes/jekyll-theme-serial-programmer/blob/main/assets/css/blog.css -->
-                            {% for post in site.posts limit:1%}
-                            <a href="{{site.baseurl}}{{post.url}}"
-                                   ><article
-                                          class="grid max-w-md mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl items-center gap-6 dark:bg-neutral-700 dark:highlight-white/5 m-16 transition ease-out md:hover:-translate-y-1 md:hover:scale-105 duration-500"
-                                   >
-                                          <h2
-                                                 class="mx-8 mt-8 text-slate-900 font-medium text-sm sm:text-base truncate dark:text-slate-200"
-                                          >
-                                                 {{post.title}}
-                                          </h2>
-                                          <small
-                                                 class="mx-8 mb-8 text-slate-500 font-medium text-sm sm:text-base leading-tight truncate dark:text-slate-400"
-                                                 >{{post.date |
-                                                 date_to_string}}</small
-                                          >
-                                   </article></a
-                            >
-                            {%endfor%}
-                     </div>
                      <div>
                             <h1
                                    class="text-center text-blue-400 tracking-tight font-extrabold dark:text-gray-100 sm:text-5xl md:text-6xl transition duration-300 mt-10"
