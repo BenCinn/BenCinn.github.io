@@ -117,11 +117,15 @@
                                    <span class="block xl:inline">Hi, I'm</span>
                                    <span class="block text-blue-400 xl:inline"
                                           >Chitsanupong,</span
-                                   ><br />I'm
-                                   <span
-                                          class="block text-blue-400 xl:inline experience"
-                                   ></span>
-                                   Developer.
+                                   ><br />
+                                   <div>
+                                          I'm
+                                          <span
+                                                 class="inline text-blue-400 experience w-auto"
+                                          ></span
+                                          ><br />
+                                          Developer.
+                                   </div>
                             </h1>
                             <div
                                    class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -137,7 +141,7 @@
                             </div>
                      </div>
                      <h1
-                            class="text-center text-blue-400 tracking-tight font-extrabold dark:text-gray-100 sm:text-5xl md:text-6xl transition duration-300"
+                            class="text-center text-blue-400 tracking-tight font-extrabold dark:text-gray-100 sm:text-5xl md:text-6xl transition duration-300 mt-10"
                      >
                             Latest posts
                      </h1>
@@ -170,9 +174,9 @@
               <script>
                      /* Text Animation */
                      var experience = new Typed('.experience', {
-                            strings: ['Front-End', 'Back-End', 'Web-App'],
+                            strings: ['Front-End ', 'Back-End', 'Web-App'],
                             typeSpeed: 100,
-                            showCursor: false,
+                            showCursor: true,
                             backSpeed: 50,
                             smartBackspace: true,
                             loop: true,
