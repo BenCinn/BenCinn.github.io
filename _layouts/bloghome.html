@@ -8,10 +8,10 @@
                      class="nav flex flex-wrap items-center justify-between px-4 backdrop-filter backdrop-blur-[10px] bg-opacity-30"
               >
                      <div
-                            class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest"
+                            class="flex items-center py-3 mr-6 flex-no-shrink text-grey-darkest"
                      >
                             <svg
-                                   class="fill-current h-8 mr-2 w-8 transition duration-300"
+                                   class="w-8 h-8 mr-2 transition duration-300 fill-current"
                                    xmlns="http://www.w3.org/2000/svg"
                                    width="97"
                                    height="97"
@@ -28,32 +28,32 @@
                             </svg>
 
                             <span
-                                   class="font-semibold text-xl tracking-tight dark:text-white transition duration-300"
+                                   class="text-xl font-semibold tracking-tight transition duration-300 dark:text-white"
                                    >BenCinn | Chitsanupong Rongpan</span
                             >
                      </div>
 
                      <input
-                            class="menu-btn hidden"
+                            class="hidden menu-btn"
                             type="checkbox"
                             id="menu-btn"
                      />
                      <label
-                            class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
+                            class="relative block px-2 py-4 cursor-pointer select-none menu-icon md:hidden"
                             for="menu-btn"
                      >
                             <span
-                                   class="navicon bg-grey-darkest flex items-center relative"
+                                   class="relative flex items-center navicon bg-grey-darkest"
                             ></span>
                      </label>
 
                      <ul
-                            class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto"
+                            class="flex justify-end w-full m-0 border-b menu md:border-none list-reset md:w-auto"
                      >
                             <li class="mr-3">
-                                   <div class="flex justify-end items-center">
+                                   <div class="flex items-center justify-end">
                                           <span
-                                                 class="text-sm dark:text-neutral-700 text-neutral-400 transition duration-300"
+                                                 class="text-sm transition duration-300 dark:text-neutral-700 text-neutral-400"
                                                  >Light</span
                                           >
                                    </div>
@@ -66,16 +66,16 @@
                                           />
                                           <label for="toggle">
                                                  <div
-                                                        class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1"
+                                                        class="flex items-center h-5 p-1 bg-gray-300 rounded-full w-9"
                                                  >
                                                         <div
-                                                               class="toggle-dot w-4 h-4 bg-white rounded-full shadow-sm transition duration-300"
+                                                               class="w-4 h-4 transition duration-300 bg-white rounded-full shadow-sm toggle-dot"
                                                         ></div></div
                                           ></label>
                                    </div>
-                                   <div class="flex justify-end items-center">
+                                   <div class="flex items-center justify-end">
                                           <span
-                                                 class="text-sm dark:text-neutral-400 text-neutral-700 transition duration-300"
+                                                 class="text-sm transition duration-300 dark:text-neutral-400 text-neutral-700"
                                                  >Dark</span
                                           >
                                    </div>
@@ -83,7 +83,7 @@
                             <li class="border-t md:border-none">
                                    <a
                                           href="/"
-                                          class="block md:inline-block px-4 py-3 no-underline text-neutral-800 hover:text-grey-darker dark:text-neutral-200 font-bold"
+                                          class="block px-4 py-3 font-bold no-underline md:inline-block text-neutral-800 hover:text-grey-darker dark:text-neutral-200"
                                           >Home</a
                                    >
                             </li>
@@ -91,7 +91,7 @@
                             <li class="border-t md:border-none">
                                    <a
                                           href="/about/"
-                                          class="block md:inline-block px-4 py-3 no-underline text-neutral-800 hover:text-grey-darker dark:text-neutral-200"
+                                          class="block px-4 py-3 no-underline md:inline-block text-neutral-800 hover:text-grey-darker dark:text-neutral-200"
                                           >About</a
                                    >
                             </li>
@@ -99,7 +99,7 @@
                             <li class="border-t md:border-none">
                                    <a
                                           href="/blog/"
-                                          class="block md:inline-block px-4 py-3 no-underline text-neutral-800 hover:text-grey-darker dark:text-neutral-200"
+                                          class="block px-4 py-3 no-underline md:inline-block text-neutral-800 hover:text-grey-darker dark:text-neutral-200"
                                           >Blog</a
                                    >
                             </li>
@@ -107,12 +107,12 @@
               </nav>
        </head>
        <body
-              class="bg-gray-100 dark:bg-neutral-800 font-sans leading-normal tracking-normal transition duration-300 flex flex-col min-h-screen relative"
+              class="relative flex flex-col min-h-screen font-sans leading-normal tracking-normal transition duration-300 bg-gray-100 dark:bg-neutral-800"
        >
-              <div class="pb-12 pt-12">
+              <div class="pt-12 pb-12">
                      <div>
                             <h1
-                                   class="text-center text-blue-400 tracking-tight font-extrabold dark:text-gray-100 sm:text-5xl md:text-6xl transition duration-300 mt-10"
+                                   class="mt-10 font-extrabold tracking-tight text-center text-blue-400 transition duration-300 dark:text-gray-100 sm:text-5xl md:text-6xl"
                             >
                                    Latest posts
                             </h1>
@@ -121,15 +121,15 @@
                             <div class="max-w-md mx-auto">
                                    <a href="{{site.baseurl}}{{post.url}}"
                                           ><article
-                                                 class="grid max-w-md mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl items-center gap-6 dark:bg-neutral-700 dark:highlight-white/5 m-16 transition ease-out md:hover:-translate-y-1 md:hover:scale-105 duration-500"
+                                                 class="grid items-center max-w-md gap-6 m-16 mx-auto transition duration-500 ease-out bg-white shadow-lg ring-1 ring-black/5 rounded-xl dark:bg-neutral-700 dark:highlight-white/5 md:hover:-translate-y-1 md:hover:scale-105"
                                           >
                                                  <h2
-                                                        class="mx-8 mt-8 text-slate-900 font-medium text-sm sm:text-base truncate dark:text-slate-200"
+                                                        class="mx-8 mt-8 text-sm font-medium truncate text-slate-900 sm:text-base dark:text-slate-200"
                                                  >
                                                         {{post.title}}
                                                  </h2>
                                                  <small
-                                                        class="mx-8 mb-8 text-slate-500 font-medium text-sm sm:text-base leading-tight truncate dark:text-slate-400"
+                                                        class="mx-8 mb-8 text-sm font-medium leading-tight truncate text-slate-500 sm:text-base dark:text-slate-400"
                                                         >{{post.date |
                                                         date_to_string}}</small
                                                  >
@@ -141,7 +141,7 @@
                      </div>
                      <div>
                             <h1
-                                   class="text-center text-blue-400 tracking-tight font-extrabold dark:text-gray-100 sm:text-5xl md:text-6xl transition duration-300 mt-10"
+                                   class="mt-10 font-extrabold tracking-tight text-center text-blue-400 transition duration-300 dark:text-gray-100 sm:text-5xl md:text-6xl"
                             >
                                    All Posts
                             </h1>
@@ -150,15 +150,15 @@
                             <div class="max-w-md mx-auto">
                                    <a href="{{site.baseurl}}{{post.url}}"
                                           ><article
-                                                 class="grid max-w-md mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl items-center gap-6 dark:bg-neutral-700 dark:highlight-white/5 m-16 transition ease-out md:hover:-translate-y-1 md:hover:scale-105 duration-500"
+                                                 class="grid items-center max-w-md gap-6 m-16 mx-auto transition duration-500 ease-out bg-white shadow-lg ring-1 ring-black/5 rounded-xl dark:bg-neutral-700 dark:highlight-white/5 md:hover:-translate-y-1 md:hover:scale-105"
                                           >
                                                  <h2
-                                                        class="mx-8 mt-8 text-slate-900 font-medium text-sm sm:text-base truncate dark:text-slate-200"
+                                                        class="mx-8 mt-8 text-sm font-medium truncate text-slate-900 sm:text-base dark:text-slate-200"
                                                  >
                                                         {{post.title}}
                                                  </h2>
                                                  <small
-                                                        class="mx-8 mb-8 text-slate-500 font-medium text-sm sm:text-base leading-tight truncate dark:text-slate-400"
+                                                        class="mx-8 mb-8 text-sm font-medium leading-tight truncate text-slate-500 sm:text-base dark:text-slate-400"
                                                         >{{post.date |
                                                         date_to_string}}</small
                                                  >
