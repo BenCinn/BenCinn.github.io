@@ -41,7 +41,7 @@
                             class="flex items-center py-3 mr-6 flex-no-shrink text-grey-darkest"
                      >
                             <svg
-                                   class="w-8 h-8 mr-2 transition duration-300 fill-current"
+                                   class="mr-2 w-8 h-8 transition duration-300 fill-current"
                                    xmlns="http://www.w3.org/2000/svg"
                                    width="97"
                                    height="97"
@@ -58,8 +58,8 @@
                             </svg>
 
                             <span
-                                   class="text-xl font-semibold tracking-tight transition duration-300 dark:text-white"
-                                   >BenCinn | Chitsanupong Rongpan</span
+                                   class="font-semibold tracking-tight transition duration-300 dark:text-white"
+                                   >BenCinn<span class="hidden sm:inline"> | <span class="text-blue-400">Chitsanupong Rongpan</span></span
                             >
                      </div>
 
@@ -69,19 +69,19 @@
                             id="menu-btn"
                      />
                      <label
-                            class="relative block px-2 py-4 cursor-pointer select-none menu-icon md:hidden"
+                            class="block relative px-2 py-4 cursor-pointer select-none menu-icon md:hidden"
                             for="menu-btn"
                      >
                             <span
-                                   class="relative flex items-center navicon bg-grey-darkest"
+                                   class="flex relative items-center navicon bg-grey-darkest"
                             ></span>
                      </label>
 
                      <ul
-                            class="flex justify-end w-full m-0 border-b menu md:border-none list-reset md:w-auto"
+                            class="flex justify-end m-0 w-full border-b menu md:border-none list-reset md:w-auto"
                      >
                             <li class="mr-3">
-                                   <div class="flex items-center justify-end">
+                                   <div class="flex justify-end items-center">
                                           <span
                                                  class="text-sm transition duration-300 dark:text-neutral-700 text-neutral-400"
                                                  >Light</span
@@ -96,14 +96,14 @@
                                           />
                                           <label for="toggle">
                                                  <div
-                                                        class="flex items-center h-5 p-1 bg-gray-300 rounded-full w-9"
+                                                        class="flex items-center p-1 w-9 h-5 bg-gray-300 rounded-full"
                                                  >
                                                         <div
-                                                               class="w-4 h-4 transition duration-300 bg-white rounded-full shadow-sm toggle-dot"
+                                                               class="w-4 h-4 bg-white rounded-full shadow-sm transition duration-300 toggle-dot"
                                                         ></div></div
                                           ></label>
                                    </div>
-                                   <div class="flex items-center justify-end">
+                                   <div class="flex justify-end items-center">
                                           <span
                                                  class="text-sm transition duration-300 dark:text-neutral-400 text-neutral-700"
                                                  >Dark</span
@@ -138,14 +138,14 @@
        </head>
        <!--Based on https://github.com/tailwindtoolbox/Minimal-Blog/blob/master/index.html-->
        <body
-              class="flex flex-col min-h-screen font-sans leading-normal tracking-normal transition duration-300 bg-gray-100 dark:bg-neutral-800"
+              class="flex flex-col min-h-screen font-sans tracking-normal leading-normal bg-gray-100 transition duration-300 dark:bg-neutral-800"
        >
               <!--Container-->
               <div
-                     class="container flex-grow w-full pt-20 mx-auto md:max-w-3xl"
+                     class="container flex-grow pt-20 mx-auto w-full md:max-w-3xl"
               >
                      <div
-                            class="w-full px-4 text-xl leading-normal text-gray-800 transition duration-300 md:px-6 dark:text-neutral-100"
+                            class="px-4 w-full text-xl leading-normal text-gray-800 transition duration-300 md:px-6 dark:text-neutral-100"
                             style="font-family: Georgia, serif"
                      >
                             <!--Title-->
@@ -164,9 +164,9 @@
                      </div>
 
                      <!--Author-->
-                     <div class="flex items-center w-full px-4 py-12 font-sans">
+                     <div class="flex items-center px-4 py-12 w-full font-sans">
                             <img
-                                   class="w-12 h-12 overflow-hidden transition duration-300 border-2 rounded-full dark:border-white border-neutral-900"
+                                   class="overflow-hidden w-12 h-12 rounded-full border-2 transition duration-300 dark:border-white border-neutral-900"
                                    src="https://avatars.githubusercontent.com/u/91706501?v=4"
                                    alt="Avatar of Author"
                             />
@@ -186,7 +186,7 @@
                             <div class="justify-end">
                                    <a href="/"
                                           ><button
-                                                 class="px-4 py-2 text-xs font-bold transition duration-300 ease-linear bg-transparent border rounded-full border-neutral-800 text-neutral-800 dark:border-neutral-500 dark:text-neutral-500 text-neutral-80 hover:border-blue-500 hover:text-blue-500 dark:hover:text-neutral-300 dark:hover:border-neutral-300"
+                                                 class="px-4 py-2 text-xs font-bold bg-transparent rounded-full border transition duration-300 ease-linear border-neutral-800 text-neutral-800 dark:border-neutral-500 dark:text-neutral-500 text-neutral-80 hover:border-blue-500 hover:text-blue-500 dark:hover:text-neutral-300 dark:hover:border-neutral-300"
                                           >
                                                  Read More
                                           </button></a
@@ -201,10 +201,10 @@
               <!--/container-->
 
               <footer
-                     class="flex justify-center transition duration-300 bg-white border-t border-gray-400 shadow dark:bg-neutral-700"
+                     class="flex justify-center bg-white border-t border-gray-400 shadow transition duration-300 dark:bg-neutral-700"
               >
-                     <div class="container flex max-w-4xl py-8 mx-auto">
-                            <div class="flex flex-wrap w-full mx-auto">
+                     <div class="container flex py-8 mx-auto max-w-4xl">
+                            <div class="flex flex-wrap mx-auto w-full">
                                    <div class="flex w-full md:w-1/2">
                                           <div class="px-8">
                                                  <h3
