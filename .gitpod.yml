@@ -1,0 +1,3 @@
+tasks:
+	- before: npm i
+	- command: npx tailwindcss -i index.template.css -o style.css --minify --watch & node dev.js
