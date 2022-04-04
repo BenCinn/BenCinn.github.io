@@ -1,5 +1,11 @@
+# https://github.com/jatoms-io/io.jatoms.page/blob/master/.gitpod.yml
+
+image:
+  file: Dockerfile
+
+ports:
+  - port: 4000
+    onOpen: open-browser
 tasks:
-  - name: Start Dev Server
-    init: npm i
-    command: npx tailwindcss -i index.template.css -o style.css --minify --watch & node dev.js
-    openMode: split-left
+  - init: bundle update && bundle install
+    command: bundle exec jekyll serve --host=0.0.0.0
