@@ -1,3 +1,10 @@
+/* How to run dev server: use command
+> npm i
+> npx tailwindcss -i index.template.css -o style.css --minify
+> npx tailwindcss -i index.template.css -o style.css --minify --watch & node dev.js
+
+*/
+
 // Define the packages and its helper.
 const exp = require('express'); // Handle the Server Load
 const app = exp(); // Express Helper
