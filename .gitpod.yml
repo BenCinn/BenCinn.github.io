@@ -1,3 +1,4 @@
 tasks:
   - name: Jekyll Dev Server
+  - init: gem install jekyll bundler && bundler install
   - command: jekyll serve --livereload
