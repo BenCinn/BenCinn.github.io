@@ -15,7 +15,7 @@
                             class="flex items-center py-3 mr-6 flex-no-shrink text-grey-darkest"
                      >
                             <svg
-                                   class="w-8 h-8 mr-2 transition duration-300 fill-current"
+                                   class="mr-2 w-8 h-8 transition duration-300 fill-current"
                                    xmlns="http://www.w3.org/2000/svg"
                                    width="97"
                                    height="97"
@@ -32,8 +32,8 @@
                             </svg>
 
                             <span
-                                   class="text-xl font-semibold tracking-tight transition duration-300 dark:text-white"
-                                   >BenCinn | Chitsanupong Rongpan</span
+                                   class="font-semibold tracking-tight transition duration-300 dark:text-white"
+                                   >BenCinn<span class="hidden sm:inline"> | <span class="text-blue-400">Chitsanupong Rongpan</span></span
                             >
                      </div>
 
@@ -43,19 +43,19 @@
                             id="menu-btn"
                      />
                      <label
-                            class="relative block px-2 py-4 cursor-pointer select-none menu-icon md:hidden"
+                            class="block relative px-2 py-4 cursor-pointer select-none menu-icon md:hidden"
                             for="menu-btn"
                      >
                             <span
-                                   class="relative flex items-center navicon bg-grey-darkest"
+                                   class="flex relative items-center navicon bg-grey-darkest"
                             ></span>
                      </label>
 
                      <ul
-                            class="flex justify-end w-full m-0 border-b menu md:border-none list-reset md:w-auto"
+                            class="flex justify-end m-0 w-full border-b menu md:border-none list-reset md:w-auto"
                      >
                             <li class="mr-3">
-                                   <div class="flex items-center justify-end">
+                                   <div class="flex justify-end items-center">
                                           <span
                                                  class="text-sm transition duration-300 dark:text-neutral-700 text-neutral-400"
                                                  >Light</span
@@ -70,14 +70,14 @@
                                           />
                                           <label for="toggle">
                                                  <div
-                                                        class="flex items-center h-5 p-1 bg-gray-300 rounded-full w-9"
+                                                        class="flex items-center p-1 w-9 h-5 bg-gray-300 rounded-full"
                                                  >
                                                         <div
-                                                               class="w-4 h-4 transition duration-300 bg-white rounded-full shadow-sm toggle-dot"
+                                                               class="w-4 h-4 bg-white rounded-full shadow-sm transition duration-300 toggle-dot"
                                                         ></div></div
                                           ></label>
                                    </div>
-                                   <div class="flex items-center justify-end">
+                                   <div class="flex justify-end items-center">
                                           <span
                                                  class="text-sm transition duration-300 dark:text-neutral-400 text-neutral-700"
                                                  >Dark</span
@@ -111,7 +111,7 @@
               </nav>
        </head>
        <body
-              class="relative flex flex-col min-h-screen font-sans leading-normal tracking-normal transition duration-300 bg-gray-100 dark:bg-neutral-800"
+              class="flex relative flex-col min-h-screen font-sans tracking-normal leading-normal bg-gray-100 transition duration-300 dark:bg-neutral-800"
        >
               <div class="pt-20 pb-12">
                      <div class="mx-8 text-center lg:text-left">
@@ -137,7 +137,7 @@
                                    <div class="rounded-md shadow">
                                           <a
                                                  href="#"
-                                                 class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white transition duration-300 ease-out bg-blue-400 border border-transparent rounded-md hover:bg-blue-300 md:py-4 md:text-lg md:px-10 md:hover:-translate-y-1 md:hover:scale-105"
+                                                 class="flex justify-center items-center px-8 py-3 w-full text-base font-medium text-white bg-blue-400 rounded-md border border-transparent transition duration-300 ease-out hover:bg-blue-300 md:py-4 md:text-lg md:px-10 md:hover:-translate-y-1 md:hover:scale-105"
                                           >
                                                  Visit my Github profile
                                           </a>
@@ -151,10 +151,10 @@
                      </h1>
                      <!-- From: https://github.com/sharadcodes/jekyll-theme-serial-programmer/blob/main/assets/css/blog.css -->
                      {% for post in site.posts %}
-                     <div class="max-w-md mx-auto">
+                     <div class="mx-auto max-w-md">
                             <a class="block" href="{{site.baseurl}}{{post.url}}"
                                    ><article
-                                          class="grid items-center max-w-md gap-6 m-16 mx-auto transition duration-500 ease-out bg-white shadow-lg ring-1 ring-black/5 rounded-xl dark:bg-neutral-700 dark:highlight-white/5 md:hover:-translate-y-1 md:hover:scale-105"
+                                          class="grid gap-6 items-center m-16 mx-auto max-w-md bg-white rounded-xl ring-1 shadow-lg transition duration-500 ease-out ring-black/5 dark:bg-neutral-700 dark:highlight-white/5 md:hover:-translate-y-1 md:hover:scale-105"
                                    >
                                           <h2
                                                  class="mx-8 mt-8 text-sm font-medium truncate text-slate-900 sm:text-base dark:text-slate-200"
