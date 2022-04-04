@@ -1,4 +1,5 @@
 tasks:
-  - before: sleep 0
+  - name: Start Dev Server
     init: npm i
     command: npx tailwindcss -i index.template.css -o style.css --minify --watch & node dev.js
+    openMode: split-left
