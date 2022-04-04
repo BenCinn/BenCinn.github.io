@@ -1,11 +1,7 @@
-# https://github.com/jatoms-io/io.jatoms.page/blob/master/.gitpod.yml
-
-image:
-  file: Dockerfile
+image: jekyll/minimal
 
 ports:
   - port: 4000
     onOpen: open-browser
 tasks:
-  - init: bundle update && bundle install
-    command: bundle exec jekyll serve --host=0.0.0.0
+  - command: jekyll serve --host=0.0.0.0
