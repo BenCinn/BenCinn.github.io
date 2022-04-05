@@ -1,5 +1,5 @@
 ports:
-  - port: 5000
+  - port: 4000
 
 tasks:
   - name: Jekyll Dev Server
