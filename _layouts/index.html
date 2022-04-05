@@ -150,7 +150,7 @@
                             Latest posts
                      </h1>
                      <!-- From: https://github.com/sharadcodes/jekyll-theme-serial-programmer/blob/main/assets/css/blog.css -->
-                     {% for post in site.posts %}
+                     {% for post in site.posts limit:1%}
                      <div class="mx-auto max-w-md">
                             <a class="block" href="{{site.baseurl}}{{post.url}}"
                                    ><article
