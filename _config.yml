@@ -1,1 +1,6 @@
 permalink: /:categories/:title
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
