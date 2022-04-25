@@ -1,7 +1,8 @@
 <script>
-  export let title
-  export let date
+	export let title;
+	export let date;
 </script>
+
 <title>{title}</title>
 
 <h1>{title}</h1>
