@@ -1,7 +1,7 @@
 export default function Blog(props) {
   if (props.latest == false){
       return (
-        <div class="overflow-hidden max-w-sm rounded shadow-lg">
+        <div class="overflow-hidden max-w-sm rounded shadow-md transition duration-300 ease-in-out hover:shadow-lg">
         <img class="w-full" src={props.img} alt={props.text} />
         <div class="px-6 py-4">
         <div class="mb-2 text-xl font-bold">{props.text}</div>
@@ -23,7 +23,7 @@ export default function Blog(props) {
     );
   } else {
     return (
-      <div class="overflow-hidden max-w-sm rounded shadow-lg">
+      <div class="overflow-hidden max-w-sm rounded shadow-lg transition duration-300 hover:shadow-xl">
       <img class="w-full" src={props.img} alt={props.text} />
       <div class="px-6 py-4">
       <div class="mb-2 text-xl font-bold">{props.text}</div>

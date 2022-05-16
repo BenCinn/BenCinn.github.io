@@ -66,10 +66,10 @@ export default function Navbar() {
           </li>
 
           <li className="border-t md:border-none">
-            <Link href="/work">
+            <Link href="/blog">
               <a className="block px-4 py-3 no-underline md:inline-block text-neutral-800 hover:text-grey-darker dark:text-neutral-200"
               >
-                Project
+                Blog
               </a>
             </Link>
           </li>

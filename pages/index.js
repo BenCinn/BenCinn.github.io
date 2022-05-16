@@ -52,13 +52,17 @@ export default function Home({ posts }) {
             developer.
           </span>
         </section>
-        <section className="mt-20 space-y-4">
+        <section className="mt-20 space-y-6">
           <span className='text-6xl font-semibold leading-none'>Latest Blog</span>
-          {posts.map(({ slug, frontmatter }) => {
+          <div className='space-y-4'>
+            {posts.map(({ slug, frontmatter }) => {
               return (
-                <Blog img={frontmatter.image} key={slug} text={frontmatter.title} desc={frontmatter.desc} date={frontmatter.date} tags={frontmatter.tags} latest />
+                <Link key={slug} href={"/blog/" + slug}><a><Blog img={frontmatter.image} text={frontmatter.title} desc={frontmatter.desc} date={frontmatter.date} tags={frontmatter.tags} latest /></a></Link>
               )
             })}
+            <Link href="/blog"><a><Button text="View all blogs" /></a></Link>
+          </div>
+          
         </section>
       </main>
 

@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: './',
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4. 
     // Looks like backward compatibility approach.
