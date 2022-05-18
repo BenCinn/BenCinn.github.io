@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
+    "deploy": "next build && next export && touch out/.nojekyll && npx gh-pages -d out -t true"
   },
   "dependencies": {
     "markdown-it": "^13.0.1",
