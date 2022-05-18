@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div>
-      <nav className="nav flex flex-wrap fixed inset-x-0 items-center justify-between px-4 backdrop-filter backdrop-blur-[10px] bg-opacity-30">
+      <nav className="nav flex flex-wrap fixed inset-x-0 items-center justify-between px-4 backdrop-filter backdrop-blur-[25px] bg-opacity-30">
         <div className="flex items-center py-3 mr-6 flex-no-shrink text-grey-darkest">
           <svg
             className="mr-2 w-8 h-8 transition duration-300 fill-current"
@@ -30,7 +30,7 @@ export default function Navbar() {
             {" "}
             |{" "}
           </span>
-          <span className="font-semibold text-dark">
+          <span className="hidden sm:inline font-semibold text-dark">
             Chitsanupong Rongpan
           </span>
         </div>

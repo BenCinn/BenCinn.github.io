@@ -57,7 +57,7 @@ export default function Home({ posts }) {
           <div className='space-y-4'>
             {posts.map(({ slug, frontmatter }) => {
               return (
-                <Link key={slug} href={"/blog/" + slug}><a><Blog img={frontmatter.image} text={frontmatter.title} desc={frontmatter.desc} date={frontmatter.date} tags={frontmatter.tags} latest /></a></Link>
+                <Blog img={frontmatter.image} text={frontmatter.title} desc={frontmatter.desc} date={frontmatter.date} tags={frontmatter.tags} latest slug={slug} />
               )
             })}
             <Link href="/blog"><a><Button text="View all blogs" /></a></Link>

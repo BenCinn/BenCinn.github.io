@@ -49,7 +49,9 @@ export default function Home({ posts }) {
         <section className="mt-20 space-y-6">
           {posts.map(({ slug, frontmatter, latest }) => {
               return (
-                <Blog img={frontmatter.image} key={slug} text={frontmatter.title} desc={frontmatter.desc} date={frontmatter.date} tags={frontmatter.tags} latest={latest} />
+                <div key={slug} className="space-y-4">
+                  <Blog img={frontmatter.image} text={frontmatter.title} desc={frontmatter.desc} date={frontmatter.date} tags={frontmatter.tags} latest={latest} slug={slug} />
+                </div>
               )
             })}
         </section>
