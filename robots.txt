@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /*.jpeg
 Disallow: /**/*.jpeg
+Sitemap: https://bencinn.github.io/sitemap-common.xml
