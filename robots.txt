@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /*.jpeg
+Disallow: /**/*.jpeg
