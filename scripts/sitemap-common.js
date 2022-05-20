@@ -17,7 +17,8 @@ const formatted = sitemap => prettier.format(sitemap, { parser: "html" });
     "!out/_next/**/*",
     "!out/404*",
     "!out/.nojekyll",
-    "!out/_*"
+    "!out/_*",
+    "!out/google*"
   ]);
 
   const pagesSitemap = `
