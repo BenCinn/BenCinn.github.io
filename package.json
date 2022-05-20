@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "next build && next export && touch out/.nojekyll && cp vertify.html google859111d5dba754e1.html && npx gh-pages -d out -t true"
+    "deploy": "next build && next export && touch out/.nojekyll && cp vertify.html out/google859111d5dba754e1.html && node scripts/sitemap-common.js && npx gh-pages -d out -t true"
   },
   "dependencies": {
     "@sentry/nextjs": "^6.19.7",
