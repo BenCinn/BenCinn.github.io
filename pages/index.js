@@ -40,15 +40,15 @@ export default function Home({ posts }) {
       <main className={styles.main}>
         <section>
           <span className='text-6xl font-semibold leading-none'>
-            I'm 
+            I'm
             <Typewriter
-            options={{
-              strings: ['Front-End', 'Back-End', 'Full-Stack'],
-              autoStart: true,
-              loop: true,
-              wrapperClassName: 'text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500',
-              cursorClassName: 'text-gray-900 pl-2',
-        }} />
+              options={{
+                strings: ['Front-End', 'Back-End', 'Full-Stack'],
+                autoStart: true,
+                loop: true,
+                wrapperClassName: 'text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500',
+                cursorClassName: 'text-gray-900 pl-2',
+              }} />
             developer.
           </span>
         </section>
@@ -62,7 +62,7 @@ export default function Home({ posts }) {
             })}
             <Link href="/blog"><a><Button text="View all blogs" /></a></Link>
           </div>
-          
+
         </section>
       </main>
 
