@@ -7,3 +7,5 @@ out
 
 # Sentry
 .sentryclirc
+
+.env.local
