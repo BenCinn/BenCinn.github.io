@@ -1,6 +1,6 @@
 ## Tasks
 - [x] Make it work
-- [ ] Make "new" actually new (check if date is more than one month)
+- [x] ~~Make "new" actually new (check if date is more than one month)~~ Change new to "newest" xD
 - [x] Make elements in blog/ clickable
 - [ ] Make it fully replicate the old website
 - [ ] Add an actual blog
