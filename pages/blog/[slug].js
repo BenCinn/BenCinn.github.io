@@ -1,18 +1,21 @@
 import fs from "fs";
 import matter from "gray-matter";
 import md from 'markdown-it';
+import readingTime from "reading-time";
 import highlightjs from "markdown-it-highlightjs";
 import "highlight.js/styles/atom-one-dark-reasonable.css"
 
 // The page for each post
-export default function Post({frontmatter, content}) {
+export default function Post({frontmatter, content, readingTime}) {
 
-    const {title, author, category, date, bannerImage, tags} = frontmatter
+    const {title, author, category, date, bannerImage, tags, series} = frontmatter
 
     return <main className="p-6">
         <img src={bannerImage}/>
         <h1 className="text-lg font-semibold lg:text-md">{title}</h1>
         <h2>Posted: {date}</h2>
+        {series && <h2 className="font-medium">Series: <span className="font-semibold text-amber-400">{series}</span></h2>}
+        <h2 className="text-gray-600">Reading time: {readingTime}</h2>
         <div class="py-2">
           {tags.map(tag => {
               return (
@@ -44,12 +47,13 @@ export async function getStaticPaths() {
 
 // Generate the static props for the page
 export async function getStaticProps({ params: { slug } }) {
-    const fileName = fs.readFileSync(`blog/${slug}.md`, 'utf-8');
-    const { data: frontmatter, content } = matter(fileName);
+    const file = fs.readFileSync(`blog/${slug}.md`, 'utf-8');
+    const { data: frontmatter, content } = matter(file);
     return {
       props: {
         frontmatter,
         content,
+        readingTime: readingTime(file).text,
       },
     };
   }
