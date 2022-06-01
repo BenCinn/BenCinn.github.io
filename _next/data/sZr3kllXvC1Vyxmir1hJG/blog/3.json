@@ -1,1 +1,0 @@
-{"pageProps":{"frontmatter":{"title":"AAAAA","desc":"This is a describtion","image":"blog/1.jpeg","date":"00-00-0000","tags":["nextjs","explained"]},"content":"\n# AA\nBBBBBBBBBBBBBB\n\n```js\nimport memes from \"../shitpost\"\nmemes.map((meme) => {\n  console.log(meme);\n})\n```"},"__N_SSG":true}
