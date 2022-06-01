@@ -14,6 +14,7 @@
     "@sentry/nextjs": "^6.19.7",
     "markdown-it": "^13.0.1",
     "markdown-it-highlightjs": "^4.0.1",
+    "markdown-it-named-code-blocks": "^0.1.0",
     "next": "12.1.6",
     "next-themes": "^0.2.0",
     "nightwind": "^1.1.12",

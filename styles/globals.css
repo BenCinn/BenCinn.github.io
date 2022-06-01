@@ -18,7 +18,32 @@ a {
   box-sizing: border-box;
 }
 @layer components {
-  code {
+  .blog-start code {
     @apply my-2 rounded;
+  }
+  .blog-start p {
+    @apply mb-4;
+  }
+  .blog-start h2 {
+    @apply mb-2 text-lg font-bold;
+  }
+  .blog-start h3 {
+    @apply mb-4 text-sm text-gray-600;
+  }
+  .blog-start .named-fence-block {
+    position: relative;
+    padding-top: 2em;
+    background: #0085FF;
+    @apply rounded;
+  }
+   
+  .blog-start .named-fence-filename {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply font-bold p-2 w-full rounded;
+    color: #FFFFFF;
+    background: #0085FF;
+    opacity: 1;
   }
 }

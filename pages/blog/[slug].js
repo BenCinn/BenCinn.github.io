@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import md from 'markdown-it';
 import readingTime from "reading-time";
 import highlightjs from "markdown-it-highlightjs";
+var namedCodeBlocks = require('markdown-it-named-code-blocks');
 import "highlight.js/styles/atom-one-dark-reasonable.css"
 
 // The page for each post
@@ -23,7 +24,7 @@ export default function Post({frontmatter, content, readingTime}) {
               )
           })}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: md().use(highlightjs).render(content) }} />
+        <div className="blog-start" dangerouslySetInnerHTML={{ __html: md().use(highlightjs).use(namedCodeBlocks).render(content) }} />
     </main>
 }
 
