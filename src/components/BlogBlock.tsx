@@ -18,7 +18,7 @@ export default function Blog(props) {
         <div className="px-6 pt-4 pb-3">
           {props.tags.map(tag => {
               return (
-                <span className="inline-block px-3 py-1 mr-2 mb-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">{tag}</span>
+                <span key={tag} className="inline-block px-3 py-1 mr-2 mb-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">{tag}</span>
               )
           })}
         </div>
